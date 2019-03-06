@@ -104,7 +104,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         activeTimerState = .off
     }
     
-    @objc func showPreferences() {}
+    @objc func showPreferences() {
+        
+    }
     
     @objc func updateTime() {
         buildMenu()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55D5D6D0222F881B00A99125 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5D6CF222F881B00A99125 /* PomodoroTimer.swift */; };
 		55DD244C220BA73E0057959F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD244B220BA73E0057959F /* AppDelegate.swift */; };
 		55DD244E220BA73E0057959F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD244D220BA73E0057959F /* ViewController.swift */; };
 		55DD2450220BA73F0057959F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DD244F220BA73F0057959F /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		55D5D6CC222F831F00A99125 /* PomodoroTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTimer.entitlements; sourceTree = "<group>"; };
+		55D5D6CF222F881B00A99125 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 		55DD2448220BA73E0057959F /* PomodoroTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DD244B220BA73E0057959F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DD244D220BA73E0057959F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				55D5D6CC222F831F00A99125 /* PomodoroTimer.entitlements */,
+				55D5D6CF222F881B00A99125 /* PomodoroTimer.swift */,
 				55DD244B220BA73E0057959F /* AppDelegate.swift */,
 				55D5D6CD222F836900A99125 /* View Controllers */,
 				55D5D6CE222F838800A99125 /* Model */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D5D6D0222F881B00A99125 /* PomodoroTimer.swift in Sources */,
 				55DD244E220BA73E0057959F /* ViewController.swift in Sources */,
 				55DD244C220BA73E0057959F /* AppDelegate.swift in Sources */,
 			);
