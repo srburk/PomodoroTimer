@@ -8,23 +8,26 @@
 
 import Foundation
 
-protocol PomodoroTimerProtocol {
-    func timeRemainingOnTimer(_ timer: PomodoroTimer, timeRemaining: TimeInterval)
-    func timerHasFinished(_ timer: PomodoroTimer)
-}
-
 class PomodoroTimer {
-    var delegate: PomodoroTimerProtocol?
     var timer: Timer? = nil
-    var startTime: Date?
-    var duration: TimeInterval = 360
+    var duration: TimeInterval = 0
     var elapsedTime: TimeInterval = 0
-    
+    var isRunning: Bool {
+        return timer != nil && elapsedTime > 0
+    }
+    var isPaused: Bool {
+        return timer == nil && elapsedTime > 0
+    }
     var isStopped: Bool {
         return timer == nil && elapsedTime == 0
     }
     
-    var isPaused: Bool {
-        return timer == nil && elapsedTime > 0
+    @objc func updateTime() {
+        
+    }
+    
+    func startTimer() {
+        elapsedTime = 0
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 }
